@@ -85,23 +85,28 @@ The dataset contains images of Martian terrain with annotations specifying wheth
 ## Results
 
 - **CNN + MLP Model**: The model achieved the following performance metrics:
-  - **Precision**: [Insert Precision]
-  - **Recall**: [Insert Recall]
-  - **F1 Score**: [Insert F1 Score]
+  - **Precision**: 0.52
+  - **Recall**: 0.50
+  - **F1 Score**: 0.42
 
 - **Transfer Learning**:
   - **EfficientNetB0**:
-    - Precision: [Insert Precision]
-    - Recall: [Insert Recall]
-    - F1 Score: [Insert F1 Score]
+    - Precision: 0.50
+    - Recall: 0.50
+    - F1 Score: 0.50
   - **ResNet50**:
-    - Precision: [Insert Precision]
-    - Recall: [Insert Recall]
-    - F1 Score: [Insert F1 Score]
+    - Precision: 0.53
+    - Recall: 0.50
+    - F1 Score: 0.43
   - **VGG16**:
-    - Precision: [Insert Precision]
-    - Recall: [Insert Recall]
-    - F1 Score: [Insert F1 Score]
+    - Precision: 0.50
+    - Recall: 0.50
+    - F1 Score: 0.46
+  - **Summary of Results**
+    - CNN + MLP Model performed the best in terms of accuracy (72%) and had a high recall for detecting Frost but struggled significantly with detecting Background.
+    - ResNet50 performed similarly to the CNN + MLP model, with a higher macro average precision but still struggled with identifying the Background class.
+    - EfficientNetB0 performed decently overall but had lower accuracy than the CNN + MLP and ResNet50 models.
+    - VGG16 had the lowest overall accuracy (48%) and showed the most balanced macro average between classes but at a lower performance level.
 
 ## License
 
